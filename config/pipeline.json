@@ -1,0 +1,171 @@
+{
+  "languages": [
+    "es",
+    "fr",
+    "de"
+  ],
+  "timezone": "Europe/Paris",
+  "content_niche": "motivational_accurate_country_history",
+  "editorial": {
+    "approval_status": "approved",
+    "countries": [
+      "Spain",
+      "France",
+      "Germany"
+    ],
+    "required_focus": [
+      "historical_event",
+      "person",
+      "place",
+      "invention",
+      "cultural_turning_point",
+      "myth_vs_fact",
+      "resilience_lesson"
+    ],
+    "modern_life_takeaway_required": true,
+    "forbidden": [
+      "generic_templated_narrative",
+      "fabricated_history",
+      "unrelated_footage",
+      "mass_produced_duplication"
+    ]
+  },
+  "youtube": {
+    "dry_run": true,
+    "privacy_status": "private",
+    "publication_strategy": {
+      "multi_language_audio": "pending_manual_studio_verification",
+      "translated_metadata": true,
+      "fallback": "language_rotation",
+      "publish_enabled": false
+    }
+  },
+  "schedule": {
+    "timezone": "Europe/Paris",
+    "long_video_time": "19:00",
+    "short_time": "12:30",
+    "provisional_until_audience_analytics": true,
+    "analytics_override_when_available": true,
+    "language_rotation": {
+      "monday": "fr",
+      "tuesday": "es",
+      "wednesday": "de",
+      "thursday": "fr",
+      "friday": "es",
+      "saturday": "de",
+      "sunday": "best_performing_theme"
+    }
+  },
+  "master_video": {
+    "duration_seconds": [
+      60,
+      120
+    ],
+    "structure": [
+      "hook",
+      "development",
+      "payoff",
+      "motivational_takeaway"
+    ],
+    "visuals": {
+      "varied_relevant_shots_required": true,
+      "slideshow_forbidden": true,
+      "repeated_background_forbidden": true
+    },
+    "narration_words_per_minute": 135,
+    "subtitles": {
+      "style": "clean_cinematic",
+      "chunking": "film_style_long_phrases",
+      "max_lines": 2,
+      "punctuation_and_language_check": true,
+      "placement": "lower_safe_region",
+      "strong_contrast": true,
+      "background": "shadow_only",
+      "animation": "unobtrusive",
+      "outputs": [
+        "srt",
+        "vtt",
+        "burned_preview"
+      ]
+    }
+  },
+  "shorts": {
+    "selection": "semantic_self_contained_moments_with_visual_continuity",
+    "required_structure": [
+      "hook",
+      "compact_idea",
+      "payoff"
+    ],
+    "sentence_boundary_cuts": true,
+    "source_timestamps_traceable": true,
+    "resolution": [
+      1080,
+      1920
+    ],
+    "crop": "subject_aware_shot_specific",
+    "captions": {
+      "max_lines": 1,
+      "words_per_event": [
+        3,
+        5
+      ],
+      "word_timed": true,
+      "current_word_highlight": "subtle_optional",
+      "font": "Roboto Bold",
+      "foreground": "#FFFFFF",
+      "outline_or_shadow": "dark",
+      "background": "shadow_only",
+      "placement": "subject_aware_middle_or_lower_safe_band",
+      "safe_sides_px": 120,
+      "safe_bottom_px": 300,
+      "max_width_ratio": 0.75,
+      "emoji_noise": false,
+      "excessive_bounce": false
+    }
+  },
+  "cadence": {
+    "master_topics_per_day": 1,
+    "localized_long_per_master": 3,
+    "shorts_total": 6
+  },
+  "policy_limits": {
+    "max_master_topics_per_day": 1,
+    "max_shorts_per_master": 6,
+    "human_review_required": true
+  },
+  "workflow": {
+    "review_phases": [
+      "editorial",
+      "publication"
+    ],
+    "scene_repair_invalidates_downstream": true,
+    "narration_statuses_blocking": [
+      "missing",
+      "stale",
+      "simulated",
+      "failed"
+    ],
+    "uncertain_upload_requires_channel_reconciliation": true
+  },
+  "analytics": {
+    "storage": "local_sqlite_future",
+    "baselines": [
+      "long",
+      "short"
+    ],
+    "simulated_data_excluded": true,
+    "human_approval_required_for_learnings": true,
+    "enabled": false
+  },
+  "providers": {
+    "footage": [
+      "archive.org",
+      "wikimedia",
+      "nasa"
+    ],
+    "tts": "piper",
+    "render": [
+      "ffmpeg"
+    ]
+  }
+}
